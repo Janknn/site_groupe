@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ambre</title>
+</head>
+<body>
+    <header class="main_header">
+
+        <a href="index.html" class="logo">Aled</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#one">Team</span></a></li>
+            <li><a href="#two">Cars</span></a></li>
+            <li><a href="#trois">Adventure</span></a></li>
+        </ul>
+    </header>
+</body>
+<script>
+    window.addEventListener('scroll',function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky',window.scrollY > 0);
+    });
+</script>
+</html>
