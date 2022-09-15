@@ -94,12 +94,6 @@ body .services{
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
-section{
-  padding: 200px 100px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  gap: 0px;
-}
 
 header{
     position: fixed;
@@ -158,13 +152,24 @@ header{
     color:darkorange;
   }
 
+
+
+
+
+  /* Banner section */
+
+
+
+
+
 .banner{
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display:flex;
   justify-content: space-between;
   align-items: center;
   background-color: black;
+    padding: 200px 100PX;
 }
 
 .banner img{
