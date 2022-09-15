@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adent.css">
+    <title>Adents</title>
+</head>
+<body>
+       <!-- Header -->
+       <div id="header"></div>
+       <header class="main_header" id="header">
+   
+           <a href="#header" class="logo">Adxm_A</a>
+           <div class="toggle"></div>
+           <ul>
+               <li><a href="#">Home</span></a></li>
+               <li><a href="projet.html">Project</span></a></li>
+               <li><a href="Contact.html">Contact</span></a></li>
+           </ul>
+       </header>
+       <!-- Fin Header -->
+   
+       <!-- contenu -->
+   
+   
+       <section class="banner">
+           <div class="textBx">
+               <h2 class="tltName"><span class="letterT">H</span>ey, I'm Adam Ammar :)</h2>
+               <h3>I'm a french web student development </h3>
+               <a href="#about" class="btn">About Me</a>
+               <!-- <img src="img/imgnoiretblanc.jpg" alt="Photo de Moi"> -->
+           </div>
+       </section>
+
+
+
+
+
+       <script>
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+       </script>
+</body>
+</html>
