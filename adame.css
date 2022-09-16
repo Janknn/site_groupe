@@ -12,9 +12,6 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: #CCDBFD;
-}
 
 /*header*/
 
@@ -150,6 +147,118 @@ header ul li a:hover{
     color: var(--couleur-secondaire);
 }
 
+.mission{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.mission_boite{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.missions{
+    flex-basis: 50%;
+}
+
+.img-mission{
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), lightblue); */
+    background-image: url(images/adam3.png);
+    height: 750px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.missions h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: black;
+}
+
+.mission_icon .fas{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.mission-text p{
+    text-align: initial;
+    padding: 0 20px;
+}
+
+.titre-text{
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.titre-text p{
+    margin: auto;
+    font-size: 20px;
+    color: var(--couleur-secondaire);
+    font-weight: bold;
+    opacity: 0.5;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.titre-text p::after{
+    content: '';
+    background: linear-gradient(var(--couleur-secondaire), var(--couleur-primaire));
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(-10deg);
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+
+.titre-text h1{
+    font-size: 50px;
+}
+
+.mission_boite{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.mission_icon .fas{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid black;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
 
 
 
@@ -168,6 +277,26 @@ header ul li a:hover{
 
 
 
+
+
+@media screen and (max-width: 770px){
+    
+    .titre-text h1{
+    font-size: 35px;
+    }
+
+    .missions{
+        flex-basis: 100%;
+    }
+
+    .img-mission{
+        flex-basis: 100%;
+    }
+    
+    .img_evans{
+        flex-basis: 100%;
+    }
+}
 
 @media screen and (max-width: 770px) {
     .baniere-text h1{
