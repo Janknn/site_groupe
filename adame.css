@@ -362,5 +362,25 @@ header ul li a:hover{
 
 .img-mission{
     display: none;
+}}
+
+@media screen and (max-width: 770px){
+    .temoignage-simple{
+        flex-basis: 100%;
+        
+    }
+
+    
+    .temoignagee-boite p{
+        font-size: 12px;
+    }
+
+.info_util h4{
+    font-size: 12px;
 }
+.info_util .fab{
+    font-size: 16px;
+}
+
+
 }
