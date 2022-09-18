@@ -290,15 +290,19 @@ header{
 } 
 .projet p, .projet h2{
   color: #fff;
+  text-align: center;
+}
+.projet p{
+  font-size: 20px;
 }
 .projet a{
   text-decoration: underline;
   color: #fff;
 }
 .projet span h2{
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 2rem;
+  margin-bottom: 8px;
+  text-decoration: underline;
+  font-size: 2.2rem;
 }
 .projet .box{
   position: relative;
@@ -425,6 +429,15 @@ header{
 /* RESPONSIVE PART*/
 
 
+
+
+
+@media (max-width: 1100px){
+  .banner{
+    background-image: none;
+    background-color: #000;
+  }
+}
 @media (max-width: 991px){
     #about .aboutDiv{
       grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
@@ -434,4 +447,25 @@ header{
       grid-column: unset !important;
       grid-row: unset !important;
     }
+}
+@media (max-width: 680px){
+  .banner .textBx h2, h3{
+    text-align: center;
+  }
+  .banner .textBx{
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .projet p{
+    margin: 0 20px;
+  }
+  .projet{
+    padding: 0;
+  }
 }
