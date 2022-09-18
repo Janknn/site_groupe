@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
 html {
     font-family: Verdana, Genava, Tahoma, sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
@@ -134,6 +139,23 @@ h1, #banner p, header{
 
 
 /* TEXTE */
+p{
+    color: #1A181B;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 40px;
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+#banner p{
+    color: #F0F4EF;
+}
+
 h4{
     text-transform: uppercase;
     font-size: 22px;
@@ -142,6 +164,7 @@ h4{
     color: #F0F4EF;
     font-weight: 200;
     text-align: center;
+
 }
 
 h4::after{
@@ -189,10 +212,10 @@ section{
 
 /* PASSIONS */
 .passion article img{
-    width: 150%;
+    width: 100%;
 }
 
-#jv{
+.passion article{
     width: 300px;
     margin: 20px;
     background-color: #F0F4EF;
@@ -205,11 +228,6 @@ section{
     padding: 50px ;
 }
 
-#music{
-    width: 300px;
-    margin: 20px;
-    background-color: #F0F4EF;
-}
 
 #music {
     display: flex;
@@ -218,11 +236,6 @@ section{
     padding: 50px ;
 }
 
-#manga{
-    width: 300px;
-    margin: 20px;
-    background-color: #F0F4EF;
-}
 
 #manga {
     display: flex;
@@ -233,12 +246,12 @@ section{
 
 /* PROJET */
 .fun_fact article img{
-    width: 150%;
-    padding-bottom: 20px;
+    width: 100%;
 }
-#projet {
-    width: 300px;
-    margin: 20px;
+
+.fun_fact article {
+    width: 600px;
+    margin: 32px;
     background-color: #F0F4EF;
 }
 
@@ -246,5 +259,5 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 50px ;
+    padding: 100px ;
 }
