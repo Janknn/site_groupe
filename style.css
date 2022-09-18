@@ -238,3 +238,31 @@ header{
     #t_msc {
         margin-left: 490px;
     }
+
+    .proj_container {
+        width: 1363px;
+        height: 200px;
+        background-color: white;
+        margin: 10%;
+        border-radius: 8px;
+    }
+
+    .proj_container p {
+        color: grey;
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        padding: 34px 51px;
+    }
+
+    .proj_title {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 630px;
+        font-size: 122px;
+        margin-top: 54px;
+    }
+
+    .name {
+        margin-left: 874px;
+        margin-top: -53px;
+    }
