@@ -199,3 +199,42 @@ header{
         margin-left: 480px;
     }
 
+    .music_container {
+        width: 1363px;
+        height: 608px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;
+    }
+    
+    .music {
+        width: 1340px;
+        height: 582px;
+        border: 2px #c5c5c5 solid;
+        margin: 12px;
+        padding: 48px 82px;
+    }
+    
+    .artistes img {
+        width: 330px;
+        margin-top: 10px;
+        margin-right: 39px;
+    }
+    
+    .artistes {
+        margin-left: 53px;
+        display: flex;
+        margin-top: 34px;
+    }
+    
+    .artistes h1 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .gori {
+        margin-left : 100px;
+    }
+    
+    #t_msc {
+        margin-left: 490px;
+    }
