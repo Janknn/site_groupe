@@ -7,73 +7,13 @@ html {
     scroll-behavior: smooth;
     
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-    background-color: none;
-    margin-bottom: 100px;
-    z-index: 60000;
-}
-
-header.sticky{
-    background-color: #fff;
-    padding: 20px 100px;
-    z-index: 60000;
-}
-header.sticky .logo{
-    color: #000;
-}
-header.sticky ul li a{
-    color: #000;
-}
-
-header .logo{
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase; /* MAJUSCULE */
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-header ul{
-    position: relative;
-    display: flex;
-    margin-right: 100px;
-}
-
-header ul li {
-    position: relative;
-    list-style: none;
-    margin-right: 50px;
-}
-
-header ul li a{
-    position: relative;
-    display: inline-block;
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-header ul li a:hover{
-    color:darkorange;
-}
 
 :root{
     --couleur-primaire: white;
@@ -82,7 +22,7 @@ header ul li a:hover{
 
 
 .baniere{
-    background: linear-gradient(rgba(0,0,0,0.5), var(--couleur-secondaire));
+    background-color: black;
     height: 100vh;
 }
 
@@ -298,6 +238,68 @@ header ul li a:hover{
     margin-right: 10px;
     border-radius: 50%;
 }
+
+.menu {
+    /* Pour que le menu reste en place quand on scroll */
+    position: fixed;
+    /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+    width: 0px;
+}
+
+
+#hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;
+}
+
+#hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    background: black;
+    width: 40px;
+    display: block;
+    color: white;
+    /* Pour que le menu hamburger s'affiche toujours */
+    text-align: right;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    width: 200px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateY(-250px);
+}
+
+#hamburger-logo,
+nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+}
+
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+
+
+
 
                                                           /* RESPONSIVE */
 
