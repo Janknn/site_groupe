@@ -168,8 +168,8 @@ header{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-    padding: 200px 100PX;
+  background-image: url(../img/adents.png);
+  background-size: contain;
 }
 
 .banner img{
@@ -267,9 +267,128 @@ header{
   grid-row: span 1;
 }
 
+
+
+
 /* Project part */
 
+.projet{
+  background: #222;
+  z-index: -100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+} 
+.projet p, .projet h2{
+  color: #fff;
+}
+.projet .box{
+  position: relative;
+  width: 300px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background: #060c21;
+  transition: 0.5s;
+  z-index: 100;
+}
+.projet .box span img{
+  height: 250px;
+  
+  /* padding: 1% 20%; */
+}
+.projet .box .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
 
+.projet .box:hover{
+  height: 350px;
+}
+
+.projet span .box:hover{
+  height: 400px;
+}
+.projet span .box img{
+  margin-left: 16px;
+}
+
+.projet .box .imgBx img{
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+.projet .box:hover .imgBx img{
+  opacity: 1;
+}
+
+.projet .box:before{
+  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.projet .box:after{
+  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(10px);
+} 
+
+
+
+.projet .box .contentImg{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.projet .box:hover .contentImg{
+  opacity: 1;
+}
+.projet .box .contentImg h2{
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.projet .box .contentImg h2 .tltC{
+  font-size: 14px;
+  color: #000;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
 
 
 
