@@ -6,18 +6,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    
+
+html{
     scroll-behavior: smooth;
-  }
+}
     
 body{
     font-family: "Poppins", "sans-serif";
-    background: #1A181B;
+    background: #C05746;
 }
 
-/*-------Header-----------*/
-
+/* HEADER */
 header{
     position: fixed;
     top: 0;
@@ -32,56 +31,57 @@ header{
     background-color: none;
     margin-bottom: 100px;
     z-index: 60000;
-  }
+}
   
-  header.sticky{
+header.sticky{
     background-color: #F0F4EF;
     padding: 20px 100px;
     z-index: 60000;
-  }
-  header.sticky .logo{
+}
+
+header.sticky .logo{
     color: #000;
-  }
-  header.sticky ul li a{
+}
+
+header.sticky ul li a{
     color: #1A181B;
-  }
+}
   
-  header .logo{
+header .logo{
     color: #fff;
     font-size: 24px;
     text-transform: uppercase; 
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
-  }
+}
   
-  header ul{
+header ul{
     position: relative;
     display: flex;
     margin-right: 100px;
-  }
+}
   
-  header ul li {
+header ul li {
     position: relative;
     list-style: none;
     margin-right: 50px;
-  }
+}
   
-  header ul li a{
+header ul li a{
     position: relative;
     display: inline-block;
     margin: 0 15px;
     color: #F0F4EF;
     text-decoration: none;
-  }
+}
   
-  header ul li a:hover{
+header ul li a:hover{
     color:rgb(0, 0, 0);
-  }
+}
 
 
-/*---- BANNER ----*/
-
+/* BANNER */
 #banner img{
     width: 300;
     height: 100%;
@@ -113,7 +113,6 @@ header{
     letter-spacing: 2px;
 }
 
-
 h1{
     font-size: 30px;
     font-weight: 200;
@@ -123,6 +122,7 @@ h1{
 #banner p{
     position: absolute;
 }
+
 #banner h1{
     position: absolute;
     top: 55%;
@@ -131,7 +131,6 @@ h1{
 h1, #banner p, header{
     z-index: 1;
 }
-
 
 
 /* TEXTE */
@@ -171,6 +170,7 @@ h4::after{
     margin: 0 auto;
     margin-top: 24px;
 }
+
 h5{
     text-transform: uppercase;
     font-size: 20px;
@@ -180,6 +180,7 @@ h5{
     font-weight: 200;
     text-align: center;
 }
+
 h5::after{
     content: "";
     display: block;
@@ -225,28 +226,30 @@ section{
     background-color: #F0F4EF;
 }
 
-#jv {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px ;
-}
+    /* #JV */
+    #jv {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px ;
+    }
 
+    /* #MUSIC */
+    #music {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px ;
+    }
 
-#music {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px ;
-}
+    /* #MANGA */
+    #manga {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px ;
+    }
 
-
-#manga {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px ;
-}
 
 /* PROJET */
 .fun_fact article img{
@@ -267,6 +270,7 @@ section{
 }
 
 
+/* FOOTER */
 footer {
     padding: 20px 0 20px 0;
     background-color: #F0F4EF;
