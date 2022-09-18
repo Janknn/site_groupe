@@ -260,7 +260,50 @@ header ul li a:hover{
     position: relative;
 }
 
+.temoignge{
+    width: 100%;
+    padding: 70px 0;
+}
 
+.temoignagee-boite{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.temoignage-simple{
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 3px #0676d1;
+    cursor: pointer;
+    transition: 0.6s ease-in;
+    padding: 20px;
+}
+
+.temoignagee-boite p{
+    font-size: 14px;
+}
+
+.temoignage-simple:hover{
+    transform: translateY(-10px);
+}
+
+.passion{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.passion img{
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
 
 
 
