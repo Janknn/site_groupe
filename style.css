@@ -131,11 +131,11 @@ header{
     }
 
     .pass_container {
-    width: 1363px;
-    height: 700px;
-    background-color: white;
-    margin: 10%;
-    padding-top: 1px;
+        width: 1363px;
+        height: 700px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;
     }
 
     .passion {
@@ -173,3 +173,29 @@ header{
     .middle {
         margin-bottom: 60px;
     }
+
+    .jv_container {
+        width: 1363px;
+        height: 853px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;  
+    }
+
+    .jv {
+        width: 1340px;
+        height: 826px;
+        border: 2px #c5c5c5 solid;
+        margin: 12px;
+        padding: 48px 82px;
+    }
+
+    .jv img {
+        width: 1170px;
+        margin-top: 30px;
+    }
+
+    .jv h1 {
+        margin-left: 480px;
+    }
+
