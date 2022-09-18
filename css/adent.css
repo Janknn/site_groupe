@@ -290,6 +290,10 @@ header{
 @media (max-width: 991px){
     #about .aboutDiv{
       grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
-      grid-template-rows: minmax(100px, auto);
+      grid-template-rows: minmax(auto, auto);
   }
+    #about .aboutDiv .box{
+      grid-column: unset !important;
+      grid-row: unset !important;
+    }
 }
