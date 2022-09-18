@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ambre</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <!-- Utilisation d'une checkbox -->
+            <input type="checkbox" id="hamburger">
+            <!-- Label de la checkbox -->
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <!-- Le reste du menu -->
+            <nav>
+            <a href="#ambre.html">Ambre</a>
+            <a href="#adent.html">Adent</a>
+            <a href="#adame.html">Adame</a>
+            <a href="#jeremy.html">Jeremy</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="pres_container">
+                <div class="presentation">
+                    <div class="pcs">
+                        <img src="img/ambre.png" alt="">
+                        <h1>Ambre Arena</h1>
+                    </div>
+                    <span class="line"></span>
+                    <ul class = "identity">
+                        <li>
+                            <p>Nom : ARENA</p>
+                            <p>Prénom : Ambre</p>
+                            <p>Age : 19 ans</p>
+                            <p>Date de naissance : 18/11/02</p>
+                            <p>Lieu de naissance : Sèvres</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="title">PASSIONS</h1>
+            <div class="pass_container">
+                <div class="passion">
+                    <h1>DESSIN</h1>
+                    <ul class="dessin">
+                        <img src="img/dessins_1.jpeg" alt="">
+                        <img class="middle" src="img/dessins_2.jpeg" alt="">
+                        <img src="img/dessin_3.png" alt="">
+                    </ul>
+                </div>
+            </div>
+            <div class="jv_container">
+                <div class="jv">
+                    <h1>JEUX VIDEOS</h1>
+                    <img src="img/tloujpg.jpg" alt="">
+                </div>
+            </div>
+            <div class="music_container">
+                <div class="music">
+                    <h1 id="t_msc">MUSIQUE</h1>
+                    <ul class="artistes">
+                        <div class="art1">
+                            <img src="img/gorillaz.jpg" alt="">
+                            <h1 class="gori">Gorillaz</h1>
+                        </div>
+                        <div class="art2">
+                            <img src="img/steve.jpg" alt="">
+                            <h1>Steve Lancy</h1>
+                        </div>
+                        <div class="art3">
+                            <img src="img/lauss.jpg" alt="">
+                            <h1>Lauss the cat</h1>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="proj_title">PROJET</h1>
+            <div class="proj_container">
+                <p>"Ouvrir un bar dansant (sur la cote d'azur si poss), et pouvoir y organiser la masse de soirées mdrrr"</p>
+                <p class="name">Ambre ARENA</p>
+            </div>
+        </section>
+        <footer>
+            <p>Ambre ARENA - LesCopains -</p>
+        </footer>
+    </main>
+</body>
+<script>
+    window.addEventListener('scroll',function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky',window.scrollY > 0);
+    });
+</script>
+</html>

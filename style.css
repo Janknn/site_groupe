@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+    font-family: Verdana, Genava, Tahoma, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+    
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------------------------------------Header------------------------------------*/
+.menu {
+    /* Pour que le menu reste en place quand on scroll */
+    position: fixed;
+    /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+    width: 0px;
+    margin-top: -180px;
+    }
+
+
+    #hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;
+    }
+
+    #hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    background: black;
+    width: 40px;
+    display: block;
+    color: white;
+    /* Pour que le menu hamburger s'affiche toujours */
+    text-align: right;
+    padding: 10px;
+    }
+
+    nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    width: 200px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateY(-250px);
+    }
+
+    #hamburger-logo,
+    nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+    }
+
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+    #hamburger:checked ~ #hamburger-logo,
+    #hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+    }
+
+    nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    }
+
+    nav a:hover {
+    background: #444;
+    }
+
+    /*-------------------------------------Main------------------------------------*/
+    body {
+        background-image: url(img/background.png);
+        background-attachment: fixed;
+    }
+    
+    .pres_container {
+        width: 1363px;
+        height: 600px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;
+    }
+
+    .presentation {
+        display: flex;
+        width: 1340px;
+        height: 575px;
+        border: 2px #c5c5c5 solid;
+        margin: 12px;
+        padding: 48px 82px;
+    }
+
+    .presentation img {
+        width: 350px;
+    }
+
+    .pcs {
+        padding-right: 85px;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        margin-left: 51px;
+        font-size: 43px;
+    }
+
+    .line {
+        border-left: 1px solid black; 
+        height: 448px; 
+        display: inline-block;
+        padding : 40px;
+    }
+
+    .identity {
+        list-style: none;
+        margin-top: 100px;
+    }
+
+    li p {
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 5px;
+    }
+
+    .pass_container {
+        width: 1363px;
+        height: 700px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;
+    }
+
+    .passion {
+        width: 1340px;
+        height: 675px;
+        border: 2px #c5c5c5 solid;
+        margin: 12px;
+        padding: 48px 82px;
+    }
+
+    .title {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 578px;
+        font-size: 122px;
+        margin-top: 54px;
+    }
+
+    .dessin img {
+        width: 330px;
+        margin-top: 10px;
+        margin-right: 39px;
+    }
+
+    .dessin {
+        margin-left: 53px;
+    }
+
+    .passion h1 {
+        font-family: 'Roboto', sans-serif;
+        margin-left: 510px;
+        font-size: 55px;
+    }
+
+    .middle {
+        margin-bottom: 60px;
+    }
+
+    .jv_container {
+        width: 1363px;
+        height: 853px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;  
+    }
+
+    .jv {
+        width: 1340px;
+        height: 826px;
+        border: 2px #c5c5c5 solid;
+        margin: 12px;
+        padding: 48px 82px;
+    }
+
+    .jv img {
+        width: 1170px;
+        margin-top: 30px;
+    }
+
+    .jv h1 {
+        margin-left: 480px;
+    }
+
+    .music_container {
+        width: 1363px;
+        height: 608px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;
+    }
+    
+    .music {
+        width: 1340px;
+        height: 582px;
+        border: 2px #c5c5c5 solid;
+        margin: 12px;
+        padding: 48px 82px;
+    }
+    
+    .artistes img {
+        width: 330px;
+        margin-top: 10px;
+        margin-right: 39px;
+    }
+    
+    .artistes {
+        margin-left: 53px;
+        display: flex;
+        margin-top: 34px;
+    }
+    
+    .artistes h1 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .gori {
+        margin-left : 100px;
+    }
+    
+    #t_msc {
+        margin-left: 490px;
+    }
+
+    .proj_container {
+        width: 1363px;
+        height: 200px;
+        background-color: white;
+        margin: 10%;
+        border-radius: 8px;
+    }
+
+    .proj_container p {
+        color: grey;
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        padding: 34px 51px;
+    }
+
+    .proj_title {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 630px;
+        font-size: 122px;
+        margin-top: 54px;
+    }
+
+    .name {
+        margin-left: 874px;
+        margin-top: -53px;
+    }
+
+    footer {
+        padding: 20px 0 20px 0;
+        background-color: #F0F4EF;
+    }
+    
+    footer p{
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    @media(max-width:768px){
+        .menu {
+            position: fixed;
+            width: 0px;
+            margin-top: -49px;
+        }
+        
+        body {
+            background-image: url(img/background_resp.png);
+            background-attachment: fixed;
+        }
+        .presentation {
+            display: block;
+            width: 296px;
+            height: 1104px;
+            border: 2px #c5c5c5 solid;
+            padding: 48px 14px;
+        }
+
+        .pres_container {
+            width: 322px;
+            height: 1133px;
+            background-color: white;
+            margin: 10%;
+            padding-top: 1px;
+        }
+
+        .title {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 48px;
+            font-size: 65px;
+            margin-top: 54px;
+        }
+        
+        .presentation img {
+            width: 267px;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .pass_container {
+            width: 322px;
+            height: 1046px;
+            background-color: white;
+            margin: 10%;
+            padding-top: 1px;
+        }
+    
+        .passion {
+            width: 296px;
+            height: 1019px;
+            border: 2px #c5c5c5 solid;
+            margin: 12px;
+            padding: 32px 37px;
+        }
+
+        .passion h1 {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            font-size: 55px;
+        }
+
+        .dessin {
+            margin: 0;
+        }
+
+        .dessin img {
+            width: 220px;
+            margin-top: 10px;
+        }
+
+        .middle {
+            margin: 0;
+        }
+
+        .jv_container {
+            width: 322px;
+            height: 309px;
+            background-color: white;
+            margin: 10%;
+            padding-top: 1px;  
+        }
+    
+        .jv {
+            width: 296px;
+            height: 283px;
+            border: 2px #c5c5c5 solid;
+            margin: 12px;
+            padding: 17px 8px;
+        }
+
+        .jv h1 {
+            margin: 0;
+        }
+
+        .jv img {
+            width: 276px;
+            margin-top: 30px;
+        }
+
+        .music_container {
+            width: 322px;
+            height: 1224px;
+            background-color: white;
+            margin: 10%;
+            padding-top: 1px;
+        }
+        
+        .music {
+            width: 296px;
+            height: 1196px;
+            border: 2px #c5c5c5 solid;
+            margin: 12px;
+            padding: 48px 23px;
+        }
+
+        .gori {
+            margin-left: 53px;
+        }
+
+        .artistes {
+            margin: 0;
+            display: block;
+            margin-top: 34px;
+        }
+
+        .artistes img {
+            width: 249px;
+            margin-top: 10px;
+            margin-right: 0;
+        }
+
+        #t_msc {
+            margin-left: 20px;
+        }
+
+        .proj_container {
+            width: 322px;
+            height: 485px;
+            background-color: white;
+            margin: 10%;
+            border-radius: 8px;
+        }
+
+        .proj_title {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 80px;
+            font-size: 65px;
+            margin-top: 54px;
+        }
+
+        .name {
+            margin-left: 114px;
+            margin-top: -45px;
+        }
+    }
