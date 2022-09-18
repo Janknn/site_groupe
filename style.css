@@ -12,14 +12,10 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: #CCDBFD;
+body {
+    background-image: url(img/background.png);
+    background-attachment: fixed;
 }
-
-/*header*/
-
-/* header */
-
 
 /*-------------------------------------Header------------------------------------*/
 
@@ -82,4 +78,54 @@ header{
 
     header ul li a:hover{
     color:darkorange;
+    }
+
+    /*-------------------------------------Main------------------------------------*/
+    .bg_container {
+        width: 1363px;
+        height: 600px;
+        background-color: white;
+        margin: 10%;
+        padding-top: 1px;
+    }
+
+    .presentation {
+        display: flex;
+        width: 1340px;
+        height: 575px;
+        border: 2px #c5c5c5 solid;
+        margin: 12px;
+        padding: 48px 82px;
+    }
+
+    .presentation img {
+        width: 350px;
+    }
+
+    .pcs {
+        padding-right: 85px;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        margin-left: 51px;
+        font-size: 43px;
+    }
+
+    .line {
+        border-left: 1px solid black; 
+        height: 448px; 
+        display: inline-block;
+        padding : 40px;
+    }
+
+    .identity {
+        list-style: none;
+        margin-top: 100px;
+    }
+
+    li p {
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 5px;
     }
