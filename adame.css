@@ -13,12 +13,6 @@ html {
     box-sizing: border-box;
 }
 
-/*header*/
-
-/* header */
-
-
-/*-------------------------------------Header------------------------------------*/
 
 header{
     position: fixed;
@@ -339,9 +333,24 @@ header ul li a:hover{
     .img_evans{
         flex-basis: 100%;
     }
-}
 
-@media screen and (max-width: 770px) {
+    .temoignage-simple{
+        flex-basis: 100%;
+        
+    }
+
+    
+    .temoignagee-boite p{
+        font-size: 12px;
+    }
+
+    .info_util h4{
+        font-size: 12px;
+    }
+    .info_util .fab{
+        font-size: 16px;
+    }
+
     .baniere-text h1{
         font-size: 44px;
     }
@@ -355,32 +364,13 @@ header ul li a:hover{
     .baniere{
     
     height: 80vh;
-}
-.icon{
-    display: none;
-}
-
-.img-mission{
-    display: none;
-}}
-
-@media screen and (max-width: 770px){
-    .temoignage-simple{
-        flex-basis: 100%;
-        
     }
 
-    
-    .temoignagee-boite p{
-        font-size: 12px;
+    .icon{
+        display: none;
     }
 
-.info_util h4{
-    font-size: 12px;
-}
-.info_util .fab{
-    font-size: 16px;
-}
-
-
+    .img-mission{
+        display: none;
+    }
 }
