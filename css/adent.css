@@ -254,3 +254,42 @@ header{
   grid-column: span 2;
   grid-row: span 1;
 }
+#about .aboutDiv .box:nth-child(2){
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#about .aboutDiv .box:nth-child(4){
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#about .aboutDiv .box:nth-child(5){
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE PART*/
+
+
+@media (max-width: 991px){
+    #about .aboutDiv{
+      grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
+      grid-template-rows: minmax(100px, auto);
+  }
+}
