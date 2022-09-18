@@ -160,7 +160,7 @@ h5{
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
-    padding: 0 0 24px 0;
+    padding: 10px;
     color: black;
     font-weight: 200;
     text-align: center;
@@ -173,13 +173,13 @@ section{
     flex-wrap: wrap;
     padding: 50px ;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 15px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* A PROPOS */
 #description {
-    width: 300px;
+    width: 500px;
     margin: 20px;
     background-color: rgb(179, 168, 168);
 }
@@ -192,17 +192,43 @@ section{
 }
 
 /* PASSIONS */
-#passion article img{
+.passion article img{
     width: 100%;
 }
 
-#passion article{
+#jv{
     width: 300px;
     margin: 20px;
     background-color: rgb(179, 168, 168);
 }
 
-#passion{
+#jv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px ;
+}
+
+#music{
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(179, 168, 168);
+}
+
+#music {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px ;
+}
+
+#manga{
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(179, 168, 168);
+}
+
+#manga {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -211,7 +237,7 @@ section{
 
 /* PROJET */
 
-#projet{
+#projet {
     width: 300px;
     margin: 20px;
     background-color: rgb(179, 168, 168);
