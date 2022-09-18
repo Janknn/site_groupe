@@ -13,7 +13,7 @@ html {
     box-sizing: border-box;
 }
 body{
-    background: #000;
+    background: #1A181B;
 }
 
 /*-------Header-----------*/
@@ -35,7 +35,7 @@ header{
   }
   
   header.sticky{
-    background-color: #fff;
+    background-color: #F0F4EF;
     padding: 20px 100px;
     z-index: 60000;
   }
@@ -43,7 +43,7 @@ header{
     color: #000;
   }
   header.sticky ul li a{
-    color: #000;
+    color: #1A181B;
   }
   
   header .logo{
@@ -71,7 +71,7 @@ header{
     position: relative;
     display: inline-block;
     margin: 0 15px;
-    color: #fff;
+    color: #F0F4EF;
     text-decoration: none;
   }
   
@@ -83,21 +83,21 @@ header{
 /*---- BANNER ----*/
 
 #banner img{
-    width: 500px;
-    height: auto;
-    margin-right: 300px;
+    width: 300;
+    height: 550px;
+    margin-right: 500px;
 }
 
 #banner{
     width: 100%;
     height: 100vh;
-    background-color: #000;    
+    background-color: #1A181B;    
     background-repeat: no-repeat;
     background-position: center left;
     background-size: cover;
     position: relative;
     /*TEXTE*/
-    color: #fff;
+    color: #F0F4EF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,27 +107,24 @@ header{
 }
 
 #banner{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 h1{
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 300;
     margin: 0;
 }
 
 #banner p{
     position: absolute;
-    top: 500px;
-    left: 500px;
 }
 #banner h1{
     position: absolute;
-    top: 540px;
-    left: 550px;
+    top: 55%;
 }
 
 h1, #banner p, header{
@@ -142,7 +139,7 @@ h4{
     font-size: 22px;
     letter-spacing: 4px;
     padding: 0 0 24px 0;
-    color: rgb(222, 222, 222);
+    color: #F0F4EF;
     font-weight: 200;
     text-align: center;
 }
@@ -173,15 +170,14 @@ section{
     flex-wrap: wrap;
     padding: 50px ;
     width: 100%;
-    margin-top: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #C05746;
 }
 
 /* A PROPOS */
 #description {
     width: 500px;
     margin: 20px;
-    background-color: rgb(179, 168, 168);
+    background-color: #F0F4EF;
 }
 
 #description{
@@ -193,13 +189,13 @@ section{
 
 /* PASSIONS */
 .passion article img{
-    width: 100%;
+    width: 150%;
 }
 
 #jv{
     width: 300px;
     margin: 20px;
-    background-color: rgb(179, 168, 168);
+    background-color: #F0F4EF;
 }
 
 #jv {
@@ -212,7 +208,7 @@ section{
 #music{
     width: 300px;
     margin: 20px;
-    background-color: rgb(179, 168, 168);
+    background-color: #F0F4EF;
 }
 
 #music {
@@ -225,7 +221,7 @@ section{
 #manga{
     width: 300px;
     margin: 20px;
-    background-color: rgb(179, 168, 168);
+    background-color: #F0F4EF;
 }
 
 #manga {
@@ -236,11 +232,14 @@ section{
 }
 
 /* PROJET */
-
+.fun_fact article img{
+    width: 150%;
+    padding-bottom: 20px;
+}
 #projet {
     width: 300px;
     margin: 20px;
-    background-color: rgb(179, 168, 168);
+    background-color: #F0F4EF;
 }
 
 #projet{
