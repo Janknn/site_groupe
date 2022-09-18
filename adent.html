@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adent.css">
+    <title>Adents</title>
+</head>
+<body>
+       <!-- Header -->
+       <div class="menu">
+            <input type="checkbox" id="hamburger">
+            <label id="hamburger-logo" for="hamburger">☰</label>
+        <nav>
+            <a href="#ambre.html">Ambre</a>
+            <a href="#adent.html">Adent</a>
+            <a href="#adame.html">Adame</a>
+            <a href="#jeremy.html">Jeremy</a>
+        </nav>
+    </div>
+       <!-- Fin Header -->
+   
+       <!-- contenu -->
+   
+   
+       <section class="banner">
+           <div class="textBx">
+               <h2 class="tltName">Hello ! ici Adam Simon :)</h2>
+               <h3>A French web student development</h3>
+               <a href="#about" class="btn">About him</a>
+           </div>
+       </section>
+
+
+
+       <!-- about me section -->
+
+       <section id="about">
+        <div class="aboutDiv">
+                <div class="box">
+                    <div class="content">
+                        <img src="  https://cdn-icons-png.flaticon.com/512/1866/1866126.png" alt="">
+                        <p>Adam a spawn dans la ville de Créteil le 24/06/2002</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src=" https://cdn-icons-png.flaticon.com/512/4072/4072149.png" alt="">
+                        <p>Adam est fanatique des échecs, il est 1650 d'elo IRL et 2200 elo sur <a href="https://chess.com" target="_blank">Chess.com</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src=" https://cdn-icons-png.flaticon.com/512/2734/2734727.png" alt="">
+                        <p>Adam joue au jeux vidéos depuis 14ans</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src=" https://cdn-icons-png.flaticon.com/512/4444/4444216.png" alt="">
+                        <p>Du haut de ses 50kg et son palai de dobermann, il prend des kebab Ketchup</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src=" https://cdn-icons-png.flaticon.com/512/4441/4441163.png" alt="">
+                        <p>Adam possède une mamie</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src=" https://cdn-icons-png.flaticon.com/512/458/458910.png" alt="">
+                        <p>Il veur devenir plus tard un développeur Fullstack</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src=" https://cdn-icons-png.flaticon.com/512/2790/2790415.png" alt="">
+                        <p>Adam est top 20 europe sur 500 joueurs sur le fameux jeu "Overwatch"</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+
+
+       <!--Project section-->
+
+       <section class="projet">
+        <div class="heading white">
+            <span><h2>Ses projets</h2></span>
+            <p>Voici les projets réalisés par Adam tout au long de sa superbe carrière de développeur. Vous retrouverez ci-joint son lien <a href="https://github.com/MortyOW" target="_blank">GitHub</a></p>
+        </div>
+        <!-- img1 -->
+        <div class="box">
+            <div class="imgBx">
+                <img src="img/cam.png">
+            </div>
+            <div class="contentImg">
+                <h2>Jeu Vidéo<br><span class="tltC">Jeu fait en classe de 3ème</span></h2>
+            </div>
+        </div>
+
+        <!-- img2 -->
+            <div class="box">
+                    <div class="imgBx">
+                            <img src="img/evan.png">
+                    </div>
+                    <div class="contentImg">
+                        <h2>Site Web<br><span class="tltC">Projet de fin d'année</span></h2>
+                    </div>
+            </div>
+        <!-- img3 -->
+        <div class="box">
+            <div class="imgBx">
+                <img src="img/rick.png">
+            </div>
+            <div class="contentImg">
+                <h2>Site Rick et Morty<br><span class="tltC">Site passion</span></h2>
+            </div>
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>Jeremy Pelchat - LesCopains -</p>
+    </footer>
+
+
+       
+
+       <script>
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+       </script>
+</body>
+</html>

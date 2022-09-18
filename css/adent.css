@@ -1,0 +1,488 @@
+/* font CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Verdana, Genava, Tahoma, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+ol, ul {
+  list-style: none;
+}
+
+/* header */
+
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky{
+  background-color: #fff;
+  padding: 20px 100px;
+}
+header.sticky .logo{
+  color: #000;
+}
+header.sticky ul li a{
+  color: #000;
+}
+
+header .logo{
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase; /* MAJUSCULE */
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  margin-right: 100px;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  margin-right: 50px;
+}
+
+header ul li a{
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  color: #e91e63;
+}
+
+body .services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+}
+/* Contenu de la page */
+
+.tltName{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+
+.menu {
+  /* Pour que le menu reste en place quand on scroll */
+  position: fixed;
+  /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+  width: 0px;
+  z-index: 400000;
+}
+
+
+#hamburger {
+  /* Pour que la checkbox ne s'affiche pas */
+  display: none;
+}
+
+#hamburger-logo {
+  /* Pour que le curseur soit un pointeur */
+  cursor: pointer;
+  background: black;
+  width: 30px;
+  display: block;
+  color: white;
+  /* Pour que le menu hamburger s'affiche toujours */
+  text-align: right;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  overflow: hidden;
+  width: 200px;
+  /* Pour que les liens soient "rangés" par défaut */
+  transform: translateY(-250px);
+}
+
+#hamburger-logo,
+nav {
+  /* Pour qu'il y ait une animation */
+  transition: 0.7s;
+}
+
+/* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
+  /* Changement de la position pour afficher les menus */
+  transform: translate(0);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background: #444;
+}
+
+
+
+
+
+  /* Banner section */
+
+
+
+
+
+.banner{
+  position: relative;
+  height: 100vh;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/adents.png);
+  background-size: contain;
+}
+
+.banner img{
+  /* display: flex; */
+  position: right;
+  width: 400px;
+}
+
+.banner h2{
+  font-size: 3em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.banner h2 span{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.banner h3{
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.textBx{
+  margin-left: 100px;
+  margin-top: 50vh;
+}
+
+.btn{
+  position: relative;
+  background: #e91e63;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+
+/* About me section */
+
+#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+#about .aboutDiv{
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+#about .aboutDiv .box{
+  background: #333;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: #FFF;
+  transition: 0.5s;
+}
+#about .aboutDiv .box:hover{
+  background: #e91e63;
+}
+#about .aboutDiv .box img{
+  position: relative;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+#about .aboutDiv .box .content p a{
+  text-decoration: underline;
+  color: #FFF;
+}
+#about .aboutDiv .box:nth-child(1){
+  grid-column: span 2;
+  grid-row: span 1;
+}
+#about .aboutDiv .box:nth-child(2){
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#about .aboutDiv .box:nth-child(4){
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#about .aboutDiv .box:nth-child(5){
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+
+
+
+/* Project part */
+
+.projet{
+  padding: 150px 100px;
+  background: #222;
+  z-index: -100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+} 
+.projet p, .projet h2{
+  color: #fff;
+  text-align: center;
+}
+.projet p{
+  font-size: 20px;
+}
+.projet a{
+  text-decoration: underline;
+  color: #fff;
+}
+.projet span h2{
+  margin-bottom: 8px;
+  text-decoration: underline;
+  font-size: 2.2rem;
+}
+.projet .box{
+  position: relative;
+  width: 300px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background: #060c21;
+  transition: 0.5s;
+  z-index: 100;
+}
+.projet .box span img{
+  height: 250px;
+  
+  /* padding: 1% 20%; */
+}
+.projet .box .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.projet .box:hover{
+  height: 350px;
+}
+
+.projet span .box:hover{
+  height: 400px;
+}
+.projet span .box img{
+  margin-left: 16px;
+}
+
+.projet .box .imgBx img{
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+.projet .box:hover .imgBx img{
+  opacity: 1;
+}
+
+.projet .box:before{
+  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.projet .box:after{
+  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(10px);
+} 
+
+
+
+.projet .box .contentImg{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.projet .box:hover .contentImg{
+  opacity: 1;
+}
+.projet .box .contentImg h2{
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.projet .box .contentImg h2 .tltC{
+  font-size: 14px;
+  color: #000;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+
+/* footer */
+footer {
+  padding: 20px 0 20px 0;
+  background-color: #F0F4EF;
+}
+
+footer p{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE PART*/
+
+
+
+
+
+@media (max-width: 1100px){
+  .banner{
+    background-image: none;
+    background-color: #000;
+  }
+}
+@media (max-width: 991px){
+    #about .aboutDiv{
+      grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
+      grid-template-rows: minmax(auto, auto);
+  }
+    #about .aboutDiv .box{
+      grid-column: unset !important;
+      grid-row: unset !important;
+    }
+}
+@media (max-width: 680px){
+  .banner .textBx h2, h3{
+    text-align: center;
+  }
+  .banner .textBx{
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .projet p{
+    margin: 0 20px;
+  }
+  .projet{
+    padding: 0;
+  }
+}
