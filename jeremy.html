@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy</title>
+    <link rel="stylesheet" href="stylesss.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="menu">
+        <!-- Utilisation d'une checkbox -->
+        <input type="checkbox" id="hamburger">
+        <!-- Label de la checkbox -->
+        <label id="hamburger-logo" for="hamburger">☰</label>
+        <!-- Le reste du menu -->
+        <nav>
+          <a href="#ambre.html">Ambre</a>
+          <a href="#adent.html">Adan</a>
+          <a href="#adame.html">Adam</a>
+          <a href="#jeremy.html">Jeremy</a>
+        </nav>
+      </div>
+
+    <!------- BANNER -------->
+    <section id="banner">
+        <img src="pics/jeremyphoto.jpg" alt="photo Jeremy" id="four">
+        <p><span>Hello!</span> C'est Jeremy</p>
+        <h1>Vous voulez en savoir plus sur moi, par ici!</h1>
+    </section>
+
+    <!-- SECTION 1 -->
+    <section>
+        <article>
+        <h4>A PROPOS</h4>
+           <div id="description">
+                <p>Je m'appelle Jeremy Pelchat aka "Le J" et j'ai 21 ans et
+                je suis un dev web junior.<br>
+                Pour être plus précis, je suis étudiant dans l'axe C&DI en deuxième année à l'IIM.<br>
+                J'ai fait plusieurs essais d'écoles sup avant d'atterir à l'IIM où j'y ai trouvé ma place. 
+                Je fais plus de 3heures de transports pour y aller, c'est vous dire! </p>
+            </div> 
+        </article>
+    </section>
+
+    <!-- SECTION 2 -->
+    <h4>Ce qui me passionne</h4>
+    <section class="passion">
+        <article> 
+            <img src="pics/jv_2 2.jpg" alt="photos_jv_pref">
+            <div id="jv">
+                <h5>jeux video</h5>
+                <p>J'adore jouer aux jeux videos. Ceux sur lesquels je passe la plupart de mon temps :<br>
+                Elden ring, Brawlhalla et Apex.<br> 
+                Ils sont vraiment géniaux... A tester absolument!
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <img src="pics/music.jpeg" alt="studio musique">
+            <div id="music">
+                <h5>musique</h5>
+                <p>Une de mes facettes cachées, je suis un prodige de la musique :<br>
+                Je joue du piano, de la batterie et à coté de ça je chante (très bien même).</p>
+            </div>
+        </article>
+
+        <article>
+            <img src="pics/manga_2 2.jpg" alt="photos_m/a_pref">
+            <div id="manga">
+                <h5>manga/anime</h5>
+                <p>Si non j'aime aussi enormément les mangas et anime.<br>
+                Bnha et Berserk sont pour moi les meilleurs que vous puissiez trouver.</p>
+            </div>    
+        </article>
+    </section>
+
+    <!-- SECTION 3 -->
+    <h4>Un projet a venir</h4>
+    <section class="fun_fact">
+        <article>
+            <img src="pics/para.jpeg" alt="parachutiste">
+            <div id="projet"> 
+                <h5>Fun fact</h5>
+                <p>Je suis un vrai fan de sensations fortes.<br> 
+                Plus tard, j'aimerais énormement passer le brevet de parachutisme pour pouvoir enfin sauter en solo!</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Jeremy Pelchat - LesCopains -</p>
+    </footer>
+
+
+     <!-- JS -->
+    <script>
+        window.addEventListener('scroll',function()
+            {
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            }
+        );
+    </script>
+</body>
+</html>

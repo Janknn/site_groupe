@@ -1,0 +1,269 @@
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+    
+body{
+    font-family: "Poppins", "sans-serif";
+    background: #C05746;
+}
+
+/* HEADER */
+.menu {
+    position: fixed;
+    width: 0px;
+  }
+  
+  
+  #hamburger {
+    display: none;
+  }
+  
+  #hamburger-logo {
+    cursor: pointer;
+    background: none;
+    width: 40px;
+    display: block;
+    color: #F0F4EF;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    overflow: hidden;
+    width: 200px;
+    transform: translateY(-250px);
+  }
+  
+  #hamburger-logo,
+  nav {
+    transition: 0.7s;
+  }
+  
+  #hamburger:checked ~ #hamburger-logo,
+  #hamburger:checked ~ nav {
+    transform: translate(0);
+  }
+  
+  nav a {
+    color: #F0F4EF;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background: #1A181B;
+  }
+
+
+/* BANNER */
+#banner img{
+    width: 300;
+    height: 100%;
+    margin-right: 80%;
+}
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #1A181B;    
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    position: relative;
+    /*TEXTE*/
+    color: #F0F4EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+#banner{
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 200;
+    margin: 0;
+}
+
+#banner p{
+    position: absolute;
+}
+
+#banner h1{
+    position: absolute;
+    top: 55%;
+}
+
+h1, #banner p, header{
+    z-index: 1;
+}
+
+
+/* TEXTE */
+p{
+    color: #464444;
+    text-align: start;
+    font-weight: 300;
+    line-height: 40px;
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    
+}
+
+#banner p{
+    color: #F0F4EF;
+    font-size: 50px;
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 0 0 24px 0;
+    color: #F0F4EF;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+h4::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1.6px;
+    background-color: rgb(222, 222, 222);
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+h5{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: black;
+    font-weight: 200;
+    text-align: center;
+}
+
+h5::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1.6px;
+    background-color: #C05746;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+/* SECTION */
+section{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 50px ;
+    width: 100%;
+    background-color: #C05746;
+}
+
+/* A PROPOS */
+#description {
+    width: 500px;
+    margin: 20px;
+    background-color: #F0F4EF;
+}
+
+#description{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 50px ;
+}
+
+/* PASSIONS */
+.passion article img{
+    width: 100%;
+}
+
+.passion article{
+    width: 300px;
+    margin: 20px;
+    background-color: #F0F4EF;
+}
+
+    /* #JV */
+    #jv {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px ;
+    }
+
+    /* #MUSIC */
+    #music {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px ;
+    }
+
+    /* #MANGA */
+    #manga {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px ;
+    }
+
+
+/* PROJET */
+.fun_fact article img{
+    width: 100%;
+}
+
+.fun_fact article {
+    width: 600px;
+    margin: 32px;
+    background-color: #F0F4EF;
+}
+
+#projet{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px ;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 20px 0 20px 0;
+    background-color: #F0F4EF;
+}
+
+footer p{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
