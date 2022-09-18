@@ -1,23 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 *,
 *::after,
 *::before{
-    box-sizing: border-box;
-}
-html {
-    font-family: Verdana, Genava, Tahoma, sans-serif;
-    font-family: 'Noto Sans JP', sans-serif;
-    scroll-behavior: smooth;
-    
-  }
-*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    
+    scroll-behavior: smooth;
+  }
+    
 body{
+    font-family: "Poppins", "sans-serif";
     background: #1A181B;
 }
 
@@ -89,8 +84,8 @@ header{
 
 #banner img{
     width: 300;
-    height: 550px;
-    margin-right: 500px;
+    height: 100%;
+    margin-right: 80%;
 }
 
 #banner{
@@ -118,9 +113,10 @@ header{
     letter-spacing: 2px;
 }
 
+
 h1{
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 200;
     margin: 0;
 }
 
@@ -140,29 +136,28 @@ h1, #banner p, header{
 
 /* TEXTE */
 p{
-    color: #1A181B;
-    text-align: justify;
+    color: #464444;
+    text-align: start;
     font-weight: 300;
     line-height: 40px;
     display: block;
     margin-block-start: 16px;
     margin-block-end: 16px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     
 }
 
 #banner p{
     color: #F0F4EF;
+    font-size: 50px;
 }
 
 h4{
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 30px;
     letter-spacing: 4px;
     padding: 0 0 24px 0;
     color: #F0F4EF;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
 
 }
@@ -178,12 +173,21 @@ h4::after{
 }
 h5{
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 20px;
     letter-spacing: 2px;
     padding: 10px;
     color: black;
     font-weight: 200;
     text-align: center;
+}
+h5::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1.6px;
+    background-color: #C05746;
+    margin: 0 auto;
+    margin-top: 24px;
 }
 
 /* SECTION */
@@ -260,4 +264,16 @@ section{
     justify-content: center;
     flex-wrap: wrap;
     padding: 100px ;
+}
+
+
+footer {
+    padding: 20px 0 20px 0;
+    background-color: #F0F4EF;
+}
+
+footer p{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
 }
