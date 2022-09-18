@@ -77,7 +77,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-  color:darkorange;
+  color: #e91e63;
 }
 
 body .services{
@@ -149,7 +149,7 @@ header{
   }
   
   header ul li a:hover{
-    color:darkorange;
+    color: #e91e63;;
   }
 
 
@@ -196,9 +196,14 @@ header{
   font-weight: 500;
 }
 
+.textBx{
+  margin-left: 100px;
+  margin-top: 50vh;
+}
+
 .btn{
   position: relative;
-  background:lightseagreen;
+  background: #e91e63;
   display: inline-block;
   color: #fff;
   margin-top: 20px;
@@ -208,6 +213,7 @@ header{
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
+  transition: 0.5s;
 }
 .btn:hover{
   opacity: 0.8;
@@ -273,6 +279,7 @@ header{
 /* Project part */
 
 .projet{
+  padding: 200px 100px;
   background: #222;
   z-index: -100000;
   display: flex;
@@ -283,6 +290,15 @@ header{
 } 
 .projet p, .projet h2{
   color: #fff;
+}
+.projet a{
+  text-decoration: underline;
+  color: #fff;
+}
+.projet span h2{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 2rem;
 }
 .projet .box{
   position: relative;
