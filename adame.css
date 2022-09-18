@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+    font-family: Verdana, Genava, Tahoma, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --couleur-primaire: white;
+    --couleur-secondaire: black;
+}
+
+
+.baniere{
+    background-color: black;
+    height: 100vh;
+}
+
+.baniere-text{
+    text-align: center;
+    color: var(--couleur-primaire);
+    padding-top: 300px;
+}
+
+.baniere-text h1{
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.baniere-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.baniere_btn{
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
+
+.baniere_btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: var(--couleur-primaire);
+    border: 1px solid var(--couleur-secondaire);
+    position: relative;
+    z-index: 1;
+    transition: color 0.6s ease-in;
+}
+
+.baniere_btn a span{
+    width: 0;
+    height: 100%;
+    background: lightblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.6s ease-in;
+}
+
+
+.baniere_btn a:hover span{
+    width: 100%;
+}
+
+.baniere_btn a:hover{
+    color: var(--couleur-secondaire);
+}
+
+.mission{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.mission_boite{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.missions{
+    flex-basis: 50%;
+}
+
+.img-mission{
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), lightblue); */
+    background-image: url(images/adam3.png);
+    height: 750px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.missions h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: black;
+}
+
+.mission_icon .fas{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.mission-text p{
+    text-align: initial;
+    padding: 0 20px;
+}
+
+.titre-text{
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.titre-text p{
+    margin: auto;
+    font-size: 20px;
+    color: var(--couleur-secondaire);
+    font-weight: bold;
+    opacity: 0.5;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.titre-text p::after{
+    content: '';
+    background: linear-gradient(var(--couleur-secondaire), var(--couleur-primaire));
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(-10deg);
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+
+.titre-text h1{
+    font-size: 50px;
+}
+
+.mission_boite{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.mission_icon .fas{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid black;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.temoignge{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.temoignagee-boite{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.temoignage-simple{
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 3px #0676d1;
+    cursor: pointer;
+    transition: 0.6s ease-in;
+    padding: 20px;
+}
+
+.temoignagee-boite p{
+    font-size: 14px;
+}
+
+.temoignage-simple:hover{
+    transform: translateY(-10px);
+}
+
+.passion{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.passion img{
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.menu {
+    /* Pour que le menu reste en place quand on scroll */
+    position: fixed;
+    /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+    width: 0px;
+}
+
+
+#hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;
+}
+
+#hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    background: black;
+    width: 40px;
+    display: block;
+    color: white;
+    /* Pour que le menu hamburger s'affiche toujours */
+    text-align: right;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    width: 200px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateY(-250px);
+}
+
+#hamburger-logo,
+nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+}
+
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+
+
+
+
+                                                          /* RESPONSIVE */
+
+@media screen and (max-width: 770px){
+    
+    .titre-text h1{
+    font-size: 35px;
+    }
+
+    .missions{
+        flex-basis: 100%;
+    }
+
+    .img-mission{
+        flex-basis: 100%;
+    }
+    
+    .img_evans{
+        flex-basis: 100%;
+    }
+
+    .temoignage-simple{
+        flex-basis: 100%;
+        
+    }
+
+    
+    .temoignagee-boite p{
+        font-size: 12px;
+    }
+
+    .info_util h4{
+        font-size: 12px;
+    }
+    .info_util .fab{
+        font-size: 16px;
+    }
+
+    .baniere-text h1{
+        font-size: 44px;
+    }
+
+
+    .baniere_btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .baniere{
+    
+    height: 80vh;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .img-mission{
+        display: none;
+    }
+}

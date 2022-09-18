@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adame.css">
+    <title>Adame</title>
+</head>
+
+<header class="main_header">
+    <div class="menu">
+        <!-- Utilisation d'une checkbox -->
+        <input type="checkbox" id="hamburger">
+        <!-- Label de la checkbox -->
+        <label id="hamburger-logo" for="hamburger">☰</label>
+        <!-- Le reste du menu -->
+        <nav>
+        <a href="#ambre.html">Ambre</a>
+        <a href="#adent.html">Adent</a>
+        <a href="#adame.html">Adame</a>
+        <a href="#jeremy.html">Jeremy</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section class="baniere" id="baniere">
+        <div class="baniere-text">
+            <h1>Adam Ammar</h1>
+            <p>Un Dev Web pas comme les autres</p>
+        </div>
+        <div class="baniere_btn">
+            <a href="#mission" id="demarrer"> <span></span>Qui est Adam?</a>
+            <a href="#temoignage" id="contacter"> <span></span>Ses Passions</a>
+        </div>
+    </section>
+
+    <section class="mission" id="mission">
+        <div class="titre-text reveal">
+            <p>INFOS</p>
+            <h1>Qui est Adam ? </h1>
+        </div>
+        <div class="mission_boite reveal">
+            <div class="missions">
+                <h1>Naissance</h1>
+                <div class="description">
+                    <div class="mission-text">
+                        <p>Adam Ammar est né TOUT JEUNE, le 11/11/02 à Paris, dans le 13ème arrondissement. Nous ne possédons pas beaucoup d'informations sur sa naissance.</p>
+                    </div>
+                </div>
+                <h1>Enfance</h1>
+                <div class="description">
+                    <div class="mission-text">
+                        <p>En primaire, Adam n'avait pas beaucoup de copains. Ses parents le qualifiaient de solitaire, mais ses camarades de classe le surnommait "le boloss". Pas spécialement doué en cours, Adam se demandait bien ce qu'il allait faire de sa vie, c'est ainsi qu'il développa une passion pour la cuisine, et son plus grand rêve était de devenir chef pâtissier. Après avoir raté sa première fournée de crêpes, Adam abandonna son rêve et se tourna vers le Développement Web. C'est ainsi qu'il intégra l'IIM.</p>
+                    </div>
+                </div>
+                <h1>Rapport qualité-prix</h1>
+                <div class="description">
+                    <div class="mission-text">
+                        <p>Un Adam ne s'achète pas très cher sur le marché. Contrairement à la plupart des Développeurs, vous pouvez trouver un Adam à partir de seulement 8 euros/an. Cependant, si votre Adam est déféctueux, nous ne garantissons aucun remboursement avant 6 mois d'abonnement. Malgré son manque de talent, Adam a participé à plusieurs projets. Un portfolio bien rempli, des projets symfony, un site en scroll-only, ce sont les projets qui ont rendu Adam Ammar célèbre. </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="img-mission">
+            </div>
+        </div>
+    </section>
+
+    <section class="temoignge" id="temoignage">
+        <div class="titre-text reveal">
+            <p>SES PASSIONS</p>
+            <h1>Les Passions d'Adam</h1>
+        </div>
+        <div class="temoignagee-boite">
+            <div class="temoignage-simple">
+                <div class="passion">
+                    <img src="./images/football.jpg" alt="">
+                    <div class="info_util">
+                        <h4>Le Football</h4>
+                    </div>
+                </div>
+                <p>Bien qu'il n'y soit pas très doué, Adam est fan de football, depuis sa victoire contre sa petite soeur au BabyFoot. Il soutient son équipe favorite, l'Ibis Sport Club depuis maintenant 10 ans, bien qu'elle n'ait toujours pas gagné de match. Adam a toujours pour objectif de devenir Footballer professionnel, parmis les plus grands, comme Peyraud-Magnin, Diani, Renard...</p>
+            </div>
+            <div class="temoignage-simple">
+                <div class="passion">
+                    <img src="./images/manette.png" alt="">
+                    <div class="info_util">
+                        <h4>Les Jeux Vidéo</h4>
+                    </div>
+                </div>
+                <p>Adam est aussi très intéressé par les jeux vidéo. Plus habile avec ses mains qu'avec ses pieds, comme ses derniers match de football nous l'ont montré, Adam s'est trouvé un talent pour un jeu vidéo en particulier. Bien qu'Overwatch soit un jeu largement plus intéressant, il a préféré s'investir sur CS:GO. Sa carrière e-sport s'est malheureusement arrêtée à cause d'une tendinite liée à un flickshot légèrement trop exagéré. </p>
+            </div>
+            <div class="temoignage-simple">
+                <div class="passion">
+                    <img src="./images/formule1.png" alt="">
+                    <div class="info_util">
+                        <h4>La Formule 1</h4>
+                    </div>
+                </div>
+                <p>Adam a toujours voulu courir, faire des marathons et des 100m avec les plus grands coureurs du monde entier. Malheureusement, son manque de vitesse ne lui a pas permi de poursuivre ses rêves. Il a donc décidé de se mettre aux courses de formule 1. Comme son canapé avait l'air plus confortable qu'une voiture, il s'est dit que regarder les courses étaient plus pratiques que d'y participer.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script >
+    window.addEventListener('scroll',function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky',window.scrollY > 0);
+});
+</script>
+</html>
